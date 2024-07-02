@@ -1,0 +1,14 @@
+version: 2.1
+
+jobs:
+  test_job:
+    docker:
+      - image: cimg/base:current
+    steps:
+      - checkout
+      - run: echo "It's-a me!"
+
+workflows:
+  testing:
+    jobs:
+      - test_job
