@@ -6,7 +6,7 @@ jobs:
       - image: cimg/base:current
     steps:
       - checkout
-      - run: echo "It's-a me, the pizza ghost"
+      - run: echo "It's-a me, the pizza ghost!"
 
 workflows:
   testing:
